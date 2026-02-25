@@ -32,7 +32,6 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 ---
 
 ## Video 
-
 ![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
 
 ---
