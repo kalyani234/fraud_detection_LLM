@@ -3,7 +3,7 @@
 Advanced, explainable fraud detection system for mobile money transactions using **LangGraph** + **GPT-4o-mini** with a structured **weighted multi-signal framework**.
 
 Built on the synthetic **PaySim** dataset — production-style prompt engineering, conservative decision logic, interactive Streamlit UI, and data-driven insights.
-
+---
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/LangGraph-%230066cc?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph"/>
@@ -11,6 +11,7 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
 </p>
 ---
+
 ## 📈 Dataset – PaySim
 - Kaggle : https://www.kaggle.com/datasets/ealaxi/paysim1
 - ~6.36 million synthetic mobile money transactions
@@ -22,14 +23,17 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 - Balance anomalies appear even in many legitimate transactions
 - Merchant accounts usually start with 'M' in nameDest
 ---
-
 ## Diagram 
+
 <img width="1321" height="975" alt="image" src="https://github.com/user-attachments/assets/25a418e0-d59d-4a4b-8fd7-13550e36c6ed" />
+
 ---
 
 ## Video 
+
 [Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
 
+---
 ## ✨ Key Features
 
 - Structured LLM reasoning with **weighted 4-signal scoring**
@@ -40,7 +44,7 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 - Clean interactive **Streamlit** dashboard
 - **Comprehensive EDA** performed on full dataset
 
-
+---
 ## 📊 Decision Framework (Production Rules)
 
 | Score Range     | Fraud Probability | Decision       |
