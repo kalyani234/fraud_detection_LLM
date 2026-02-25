@@ -10,8 +10,9 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
   <img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-orange?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-4o-mini"/>
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
 </p>
-## 📈 Dataset – PaySim
 
+## 📈 Dataset – PaySim
+- Kaggle : https://www.kaggle.com/datasets/ealaxi/paysim1
 - ~6.36 million synthetic mobile money transactions
 - Simulated over 744 hours (~1 month)
 - 11 columns: step, type, amount, nameOrig, oldbalanceOrg, newbalanceOrig, nameDest, oldbalanceDest, newbalanceDest, isFraud, isFlaggedFraud
