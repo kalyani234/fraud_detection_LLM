@@ -71,57 +71,26 @@ paysim-fraud-agent/
 ## 🏗️ Full System & Data Pipeline Architecture
 
 ```mermaid
-flowchart LR
-
-    %% ─────────────────────────────
-    %% DATA LAYER
-    %% ─────────────────────────────
-    A[PaySim Raw Dataset<br>CSV ~6.3M rows] --> B[Data Preprocessing]
-    B --> C[Parquet Optimization]
-    C --> D[Efficient Data Loader]
-
-    %% ─────────────────────────────
-    %% APPLICATION LAYER
-    %% ─────────────────────────────
-    D --> E[Streamlit UI<br>User Transaction Input]
-
-    E --> F{Transaction Type Gate}
-
-    F -->|PAYMENT / CASH_IN / DEBIT| G[Auto Legitimate<br>Bypass Agent]
-
-    F -->|TRANSFER / CASH_OUT| H[LangGraph ReAct Agent]
-
-    %% ─────────────────────────────
-    %% AGENT TOOLING
-    %% ─────────────────────────────
-    H --> I[Tool: Account History Lookup]
-    H --> J[Tool: Balance Analysis]
-    H --> K[Tool: Merchant Detection]
-    H --> L[Tool: Pattern Evaluation]
-    H --> M[Tool: Signal Aggregator]
-
-    I --> N[Weighted Scoring Engine]
-    J --> N
-    K --> N
-    L --> N
-    M --> N
-
-    %% ─────────────────────────────
-    %% DECISION LAYER
-    %% ─────────────────────────────
-    N --> O[Conservative Decision Logic]
-    O --> P[Structured Output Formatter]
-
-    %% ─────────────────────────────
-    %% OUTPUT LAYER
-    %% ─────────────────────────────
-    P --> Q[Step-by-Step Reasoning]
-    P --> R[Fraud Probability]
-    P --> S[Final Decision]
-
-    Q --> T[Streamlit Dashboard]
-    R --> T
-    S --> T
+flowchart TD
+    A[Input Transaction\nJSON / DataFrame row] --> B{Type?}
+    
+    B -->|PAYMENT\nCASH_IN\nDEBIT| C[LEGITIMATE\n5% probability]
+    B -->|TRANSFER\nCASH_OUT| D[ReAct Agent\n4-Signal Scoring]
+    
+    D --> E1[Tool: get_origin_history\n→ Account Behavior 40%]
+    D --> E2[Tool: check_balance_anomaly\n→ Balance Anomaly 40%]
+    D --> E3[Tool: is_merchant_account\n→ Destination Type 10%]
+    D --> E4[Tool: amount check\n→ Amount Context 10%]
+    
+    E1 & E2 & E3 & E4 --> F[Calculate Total Score]
+    
+    F --> G{Score Threshold}
+    
+    G -->|≤ +1.0| H[LEGITIMATE\n5–20%]
+    G -->|+1.1 to +2.0| I[SUSPICIOUS\n50%]
+    G -->|> +2.0| J[FRAUD\n75%]
+    
+    H & I & J --> K[Structured Output\n• Step-by-step reasoning\n• Probability\n• Final Decision]
 ```
 ## 📈 Loading Performance
 
