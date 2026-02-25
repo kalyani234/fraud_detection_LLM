@@ -31,10 +31,6 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 
 ---
 
-## Video 
-![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
-
----
 ## ✨ Key Features
 
 - Structured LLM reasoning with **weighted 4-signal scoring**
@@ -114,6 +110,9 @@ flowchart TD
     
     H & I & J --> K[Structured Output\n• Step-by-step reasoning\n• Probability\n• Final Decision]
 ```
+## Video 
+![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
+
 ## 📈 Loading Performance
 
 | Sample | Parquet Time | Memory   |
