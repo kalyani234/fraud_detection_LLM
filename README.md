@@ -10,9 +10,22 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
   <img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-orange?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-4o-mini"/>
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
 </p>
+## 📈 Dataset – PaySim
+
+- ~6.36 million synthetic mobile money transactions
+- Simulated over 744 hours (~1 month)
+- 11 columns: step, type, amount, nameOrig, oldbalanceOrg, newbalanceOrig, nameDest, oldbalanceDest, newbalanceDest, isFraud, isFlaggedFraud
+- **Fraud rate**: ~0.129% (extremely imbalanced)
+- **Fraud occurs exclusively** in TRANSFER and CASH_OUT transactions
+- No fraud cases in PAYMENT, CASH_IN or DEBIT
+- Balance anomalies appear even in many legitimate transactions
+- Merchant accounts usually start with 'M' in nameDest
 
 ## Diagram 
 <img width="1321" height="975" alt="image" src="https://github.com/user-attachments/assets/25a418e0-d59d-4a4b-8fd7-13550e36c6ed" />
+
+## Video 
+[Demo](
 
 ## ✨ Key Features
 
@@ -23,6 +36,7 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 - Fast parquet data loading (~10× faster)
 - Clean interactive **Streamlit** dashboard
 - **Comprehensive EDA** performed on full dataset
+
 
 ## 📊 Decision Framework (Production Rules)
 
