@@ -10,6 +10,7 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
   <img src="https://img.shields.io/badge/OpenAI-GPT--4o--mini-orange?style=for-the-badge&logo=openai&logoColor=white" alt="GPT-4o-mini"/>
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
 </p>
+
 ---
 
 ## 📈 Dataset – PaySim
@@ -22,6 +23,7 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 - No fraud cases in PAYMENT, CASH_IN or DEBIT
 - Balance anomalies appear even in many legitimate transactions
 - Merchant accounts usually start with 'M' in nameDest
+
 ---
 ## Diagram 
 
@@ -31,7 +33,7 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 
 ## Video 
 
-[Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
+![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
 
 ---
 ## ✨ Key Features
