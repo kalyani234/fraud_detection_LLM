@@ -58,6 +58,8 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 
 ![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
 
+---
+
 ## 🔍 Exploratory Data Analysis
 
 **Key Insight**: Fraud is extremely rare (**0.13%**) and occurs **exclusively** in TRANSFER and CASH_OUT transactions — perfectly validating the prompt’s type-based gating logic.
