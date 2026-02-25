@@ -1,6 +1,6 @@
 # 🛡️ PaySim Fraud Detection Agent
 
-Advanced, explainable fraud detection system for mobile money transactions using **LangGraph** + **GPT-4o-mini** with a structured **weighted multi-signal framework**.
+- Advanced, explainable fraud detection system for mobile money transactions using **LangGraph** + **GPT-4o-mini** with a structured **weighted multi-signal framework**.
 Built on the synthetic **PaySim** dataset — production-style prompt engineering, conservative decision logic, interactive Streamlit UI, and data-driven insights.
 ---
 <p align="center">
