@@ -12,6 +12,8 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 </p>
 
 ---
+<img width="1189" height="669" alt="Screenshot 2026-02-25 at 6 58 32 PM" src="https://github.com/user-attachments/assets/dd80367e-ad56-4d49-9339-a80db5e55c7c" />
+
 
 ## 📈 Dataset – PaySim
 - Kaggle : https://www.kaggle.com/datasets/ealaxi/paysim1
@@ -51,12 +53,6 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 | > +2.0          | 75%               | FRAUD          |
 
 **Hard safeguards**: Never flag fraud based on single signal (especially balance or amount alone). PAYMENT / CASH_IN / DEBIT → always LEGITIMATE.
-
----
-
-## Video 
-
-![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
 
 ---
 
