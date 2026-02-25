@@ -52,6 +52,12 @@ Built on the synthetic **PaySim** dataset — production-style prompt engineerin
 
 **Hard safeguards**: Never flag fraud based on single signal (especially balance or amount alone). PAYMENT / CASH_IN / DEBIT → always LEGITIMATE.
 
+---
+
+## Video 
+
+![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
+
 ## 🔍 Exploratory Data Analysis
 
 **Key Insight**: Fraud is extremely rare (**0.13%**) and occurs **exclusively** in TRANSFER and CASH_OUT transactions — perfectly validating the prompt’s type-based gating logic.
@@ -110,8 +116,7 @@ flowchart TD
     
     H & I & J --> K[Structured Output\n• Step-by-step reasoning\n• Probability\n• Final Decision]
 ```
-## Video 
-![Recording](https://github.com/kalyani234/fraud_detection_LLM/issues/1#issue-3991106222)
+---
 
 ## 📈 Loading Performance
 
@@ -120,6 +125,8 @@ flowchart TD
 | 1%     | ~0.5s        | ~100 MB  |
 | 10%    | ~5s          | ~800 MB  |
 | 100%   | ~20s         | ~6.5 GB  |
+
+---
 
 ## 🔮 Next Steps (AI Portfolio Ready)
 
